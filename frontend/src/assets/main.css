@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 /* Style untuk animasi scroll yang akan kita pakai nanti */
 .before-enter {
  opacity: 0;
