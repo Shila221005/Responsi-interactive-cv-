@@ -2,14 +2,18 @@
 import { ref, onMounted } from 'vue'
 import axios from 'axios'
 import SectionTitle from './SectionTitle.vue'
+
+import ecommersImage from '../assets/FotoEcommersNew.jpeg'
+import ManajementTugasImage from '../assets/ManajementTugas(Gambar2).jpg'
+
 const projects = [
   {
-    title: 'Website Toko Online', image: 'https://via.placeholder.com/500x300?text=Proyek+1',
+    title: 'Website Toko Online', image: ecommersImage,
     description: 'Platform e-commerce dengan fitur keranjang belanja.', tech: ['Vue.js', 'Express.js',
       'PostgreSQL'], link: '#'
   },
   {
-    title: 'Aplikasi Manajemen Tugas', image: 'https://via.placeholder.com/500x300?text=Proyek+2',
+    title: 'Aplikasi Manajemen Tugas', image: ManajementTugasImage,
     description: 'Aplikasi untuk melacak progres tugas harian.', tech: ['React', 'Firebase'], link: '#'
   }
 ];

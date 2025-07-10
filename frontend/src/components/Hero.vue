@@ -13,17 +13,10 @@
         Hubungi Saya
       </a>
     </div>
-    <div class="md:w-1/2 flex justify-center animate-slide-in-right">
-      <img src="../assets/FotoProfil.jpg" alt="Foto Profil"
-        class="w-80 h-80 rounded-full object-cover shadow-lg">
+    <div class="md:w-1/2 flex justify-center md:justify-end animate-slide-in-right">
+      <img src="../assets/Pas Foto.jpg"
+        alt="Foto Profil"
+        class="w-96 h-96 rounded-full object-cover shadow-lg md:ml-12">
     </div>
   </section>
 </template>
-
-<script lang="ts">
-import { defineComponent } from 'vue';
-
-export default defineComponent({
-  name: 'HeroSection'
-});
-</script>
