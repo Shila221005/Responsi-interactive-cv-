@@ -3,8 +3,8 @@ import { ref, onMounted } from 'vue'
 import axios from 'axios'
 import SectionTitle from './SectionTitle.vue'
 
-import ecommersImage from '../assets/FotoEcommersNew.jpeg'
-import ManajementTugasImage from '../assets/ManajementTugas(Gambar2).jpg'
+import ecommersImage from '../assets/image/FotoEcommersNew.jpeg'
+import ManajementTugasImage from '../assets/image/ManajementTugas(Gambar2).jpg'
 
 const projects = [
   {

@@ -14,7 +14,7 @@
       </a>
     </div>
     <div class="md:w-1/2 flex justify-center md:justify-end animate-slide-in-right">
-      <img src="../assets/Pas Foto.jpg"
+      <img src="../assets/image/Pas Foto.jpg"
         alt="Foto Profil"
         class="w-96 h-96 rounded-full object-cover shadow-lg md:ml-12">
     </div>
