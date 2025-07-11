@@ -1,21 +1,31 @@
 const express = require('express');
 const cors = require('cors');
-// Untuk sementara kita ambil dari data.js. Nanti ini akan dihapus. 
-const { educationHistory, skills, projects } = require('./data.js');  
+// Untuk sementara kita ambil dari data.js. Nanti ini akan dihapus.
+const { educationHistory, skills, projects } = require('./data.js');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Endpoint untuk mendapatkan data pendidikan 
+// Middleware
+app.use(cors());
+app.use(express.json());
+
+// Endpoint untuk mendapatkan data pendidikan
 app.get('/api/education', (req, res) => {
-    res.json(educationHistory);
+  res.json(educationHistory);
 });
-// Endpoint untuk mendapatkan data skill 
+
+// Endpoint untuk mendapatkan data skill
 app.get('/api/skills', (req, res) => {
-    res.json(skills);
+  res.json(skills);
 });
-// Endpoint untuk mendapatkan data proyek 
+
+// Endpoint untuk mendapatkan data proyek
 app.get('/api/projects', (req, res) => {
-    res.json(projects);
+  res.json(projects);
 });
-// Baris ini penting agar Vercel bisa menjalankan backend Anda module.exports = app;
+
+// ⏳ Baris ini PENTING supaya server tetap hidup
+app.listen(PORT, () => {
+  console.log(`Server berjalan di http://localhost:${PORT}`);
+});
